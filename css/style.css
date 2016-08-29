@@ -192,7 +192,7 @@ div.readbtn {
 }
 
 
-.bar__column {
+.column {
 	float: left;
 	width: 318px;
 	height: 250px;
@@ -200,11 +200,11 @@ div.readbtn {
 }
 
 .firstcol {
-	background: url("..img/sprint.png") 0 0 no-repeat;
+	background: url("../img/sprint.png") 0 0 no-repeat;
 	background-position: top;
 }
 
-.bar__column h3 {
+.column h3 {
 	text-shadow: 1px 1px 0 #0f1518;
 	color: white;
 	font-family: LeagueGothic, sans-serif;
@@ -215,7 +215,7 @@ div.readbtn {
 	margin-top: 80px;
 }
 
-.bar__column p {
+.column p {
 	text-shadow: 1px 1px 0 #0f1518;
 	color: white;
 	font-family: OpenSans, sans-serif;
@@ -269,4 +269,37 @@ div.readbtn {
 .updates {
 	height:  226px;
 	width: 365px;
+}
+
+.img-logo {
+	width: 775px;
+	height: 65px;
+	background: url("../img/logos.png");
+
+}
+
+footer {
+	background-color: #ECECEC;
+	height: 512px;
+	width: 100%;
+}
+
+.footer__column {
+	width: 33.3333%;
+	float: left;
+}
+
+.footer__logo {
+	margin: 0;
+	width: 100%;
+}
+
+.logo__ending--gray {
+	color: #b9b9b9;
+}
+
+.footer__copy {
+	display: block;
+	color: #c5c5c5;
+	width: 100%;
 }
