@@ -52,14 +52,17 @@ header {
 
 .logo {
 	float: left;
-	margin-top: 70px;
-	margin-bottom: 172px;
 }
 
 .logo p {
 	display: inline;
 	padding: 0;
 	letter-spacing: 1px;
+}
+
+.logo__header {
+	margin-top: 70px;
+	margin-bottom: 172px;
 }
 
 .logo__start {
@@ -78,7 +81,7 @@ header {
 	margin-left: -4px; !important;
 	width: 29px;
 	height: 36px;
-	color: #1e2813;
+	color: #724f81;
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 	font-family: 'LeagueGothic', sans-serif;
 	font-size: 48px;
@@ -90,7 +93,7 @@ header {
 
 }
 
-.menu>ul>li {
+.menu__header>ul>li {
 	float: right;
 	margin-left: 20px;
 	margin-top: 76px;
@@ -194,9 +197,15 @@ div.readbtn {
 
 .column {
 	float: left;
-	width: 318px;
+	width: 33.333333%;
+
+}
+
+.bar__column {
 	height: 250px;
 	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
 
 .firstcol {
@@ -211,6 +220,9 @@ div.readbtn {
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 24px;
+}
+
+.bar__column h3 {
 	padding-left: 113px;
 	margin-top: 80px;
 }
@@ -222,6 +234,10 @@ div.readbtn {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
+
+}
+
+.bar__column p {
 	padding-left: 113px;
 }
 
@@ -232,13 +248,14 @@ div.readbtn {
 .content__column {
 	position: relative;
 	width: 50%;
+	overflow: hidden;
 }
 
 .content__column h3 {
 	width: 207px;
 	height: 22px;
-	text-shadow: 0.5px 0.9px 0 white;
-	font-family: LeagueGothic;
+	text-shadow: 1px 2px 0 white;
+	font-family: LeagueGothic, sans-serif;
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 24px;
@@ -284,12 +301,13 @@ footer {
 	width: 100%;
 }
 
-.footer__column {
-	width: 33.3333%;
-	float: left;
+.column__footer {
+	margin: 0;
+	padding: 0;
 }
 
-.footer__logo {
+.logo__footer {
+	display: inline;
 	margin: 0;
 	width: 100%;
 }
@@ -298,8 +316,44 @@ footer {
 	color: #b9b9b9;
 }
 
-.footer__copy {
+.copy__footer {
 	display: block;
 	color: #c5c5c5;
 	width: 100%;
+}
+
+.img-footer {
+	background: url("../img/bg-footer.png");
+	background-size: cover;
+	background-position: center, top;
+	width: 100%;
+	height: 114px;
+}
+
+.menu__footer {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.menu__footer>ul>li {
+	float: left;
+	padding-right: 20px;
+	font-family: 'LeagueGothic', sans-serif;
+}
+
+.designed {
+	float: right;
+	width: 137px;
+	height: 13px;
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+	color: white;
+	font-family: OpenSans, sans-serif;
+	font-size: 12px;
+	line-height: 34px;
+	font-weight: 300;
+}
+
+.designed span {
+	font-weight: 700;
 }
