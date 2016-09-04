@@ -45,7 +45,7 @@ header {
 }
 
 .centered {
-	width: 956px;
+	width: 982px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -57,7 +57,6 @@ header {
 .logo p {
 	display: inline;
 	padding: 0;
-	letter-spacing: 1px;
 }
 
 .logo__header {
@@ -78,7 +77,7 @@ header {
 }
 
 .logo__ending {
-	margin-left: -4px; !important;
+	margin-left: -6px; !important;
 	width: 29px;
 	height: 36px;
 	color: #724f81;
@@ -93,11 +92,12 @@ header {
 
 }
 
-.menu__header>ul>li {
+.menu__header > ul > li {
 	float: right;
-	margin-left: 20px;
-	margin-top: 76px;
+	margin-left: 30px;
+	margin-top: 70px;
 	font-family: 'LeagueGothic', sans-serif;
+	margin-right: 22px;
 }
 
 .menu>ul>li>a {
@@ -111,8 +111,8 @@ header {
 	text-decoration: none;
 }
 
-.menu>ul>li>a:hover {
-	text-decoration: underline;
+.menu>ul>li:hover {
+	border-bottom: 2px solid white;
 }
 
 .carousel {
@@ -122,7 +122,7 @@ header {
 }
 
 .container {
-	width: 502px;
+	width: 517px;
 }
 
 .container h1 {
@@ -131,8 +131,10 @@ header {
 	font-size: 60px;
 	font-weight: 400;
 	line-height: 36px;
-	padding-top: 83px;
-	padding-bottom: 15px;
+	padding-top: 90px;
+	padding-bottom: 10px;
+	padding-left: 3px;
+	letter-spacing: -0.3px;
 }
 
 .container h2 {
@@ -141,6 +143,7 @@ header {
 	font-size: 32px;
 	font-weight: 400;
 	line-height: 36px;
+	padding-left: 3px;
 }
 
 .container p {
@@ -148,16 +151,21 @@ header {
 	font-family: 'OpenSans', sans-serif;
 	font-size: 18px;
 	font-weight: 300;
-	line-height: 30px;
+	line-height: 25px;
+	letter-spacing: -0.4px;
+	margin-top: 1px;
 }
 
 div.readbtn {
 	height: 22px;
+	width: 256px;
+
 }
 
 .readbtn>a {
 	color: white;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .readbtn>a:hover {
@@ -166,14 +174,14 @@ div.readbtn {
 
 .img-back {
 	position: absolute;
-	right: 176px;
-	top: 43px;
+	right: 227px;
+	top: 58px;
 }
 
 .img-phone {
 	position: absolute;
-	right: 30px;
-	top:-45px;
+	right: 92px;
+	top:-17px;
 	z-index: 1;
 }
 
@@ -192,25 +200,68 @@ div.readbtn {
 	background: linear-gradient(to top, #322539 0%, #745083 100%);
 	height: 342px;
 	width: 100%;
+	margin-top: -140px;
 }
 
 
 .column {
 	float: left;
-	width: 33.333333%;
+}
+
+.btn__container {
+	width: 100%;
+	height: 22px;
+	margin-left: 20px;
+	overflow: hidden;
+}
+
+.column__readbtn {
+	float: left;
 
 }
 
 .bar__column {
-	height: 250px;
+	height: 253px;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
+	width: 255px;
 }
 
-.firstcol {
+.icon {
+	float: left;
+	height: 30px;
+	margin-top: 82px;
+	width: 30px;
 	background: url("../img/sprint.png") 0 0 no-repeat;
-	background-position: top;
+}
+
+.right_align {
+	padding-left: 200px;
+}
+
+.firstcol{
+	margin-left: 10px;
+}
+
+.secondcol {
+	background-position: -30px 0;
+	margin-left: 54px;
+}
+
+.thirdcol{
+	background-position: -58px 0;
+	margin-left: 52px;
+}
+
+.second__btn {
+	width: 0;
+	padding-left: 86px;
+}
+
+.third__btn {
+	width: 0;
+	padding-left: 81px;
 }
 
 .column h3 {
@@ -223,8 +274,8 @@ div.readbtn {
 }
 
 .bar__column h3 {
-	padding-left: 113px;
 	margin-top: 80px;
+	padding-left: 24px;
 }
 
 .column p {
@@ -234,11 +285,12 @@ div.readbtn {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
-
 }
 
 .bar__column p {
-	padding-left: 113px;
+	margin-top: 10px;
+	letter-spacing: -0.4px;
+	padding-left: 24px;
 }
 
 .content {
@@ -249,6 +301,7 @@ div.readbtn {
 	position: relative;
 	width: 50%;
 	overflow: hidden;
+	margin-top: 98px;
 }
 
 .content__column h3 {
@@ -261,10 +314,24 @@ div.readbtn {
 	line-height: 24px;
 	text-transform: uppercase;
 	color: #454545;
+	padding-top: 36px;
+	padding-left: 19px;
 }
 
 .content__column span {
 	color: #edbfff;
+}
+
+.content__darkrow {
+	width: 365px;
+	height: 41px;
+	text-shadow: 1px 2px 0 white;
+	color: #454545;
+	font-family: OpenSans, sans-serif;
+	font-size: 16px;
+	line-height: 44px;
+	padding-top: 0;
+	font-weight: 800;
 }
 
 .content__lightrow {
@@ -273,26 +340,78 @@ div.readbtn {
 	font-family: OpenSans, sans-serif;
 	font-size: 16px;
 	font-weight: 300;
-	line-height: 24px;
+	line-height: 2px;
 }
 
 .start {
+	background: url("../img/dialogue_cloud.png");
 	float: left;
-	background-color: #fff;
 	width: 427px;
 	height: 292px;
+	margin-left: 23px;
+}
+
+.start img{
+	position: absolute;
+	top: 22px;
+	left:0;
+}
+
+.start h3 {
+	padding-left: 38px;
+	padding-top: 36px;
+	letter-spacing: -0.3px;
+}
+
+.start p {
+	padding-left: 38px;
+	letter-spacing: -0.4px;
+	line-height: 24px;
+	margin-top: 13px;
+	padding-right: 32px;
+}
+
+.start__markers {
+	margin-top: 303px;
+	margin-bottom: 64px;
 }
 
 .updates {
-	height:  226px;
-	width: 365px;
+	height:  280px;
+	width: 100%;
+}
+
+.update__article {
+	margin-top: 11px;
+}
+
+.update__article p {
+	margin-top: 10px;
+	padding-left: 0;
+}
+
+.update__article img{
+	float: left;
+	padding: 6px 17px 0 18px;
+}
+
+div.update__readbtn {
+	width: 91%;
+}
+
+.update__readbtn>a {
+	float: right;
+	text-shadow: 1px 2px 0 white;
+	color: #454545;
+	font-family: LeagueGothic, sans-serif;
+	font-size: 18px;
 }
 
 .img-logo {
-	width: 775px;
+	width: 795px;
 	height: 65px;
-	background: url("../img/logos.png");
-
+	background: url("../img/logos.png") no-repeat;
+	margin-top: 23px;
 }
 
 footer {
@@ -302,8 +421,25 @@ footer {
 }
 
 .column__footer {
-	margin: 0;
+	margin-top: 102px;
+	padding-left: 43px;
+	width: 30%;
+	height: 250px;
+	overflow: hidden;
+	margin-bottom: 48px;
+}
+
+.column__footer:first-child {
 	padding: 0;
+}
+
+.column__footer>h3 {
+	color: #454545;
+}
+
+.column__footer>p {
+	color: #787878;
+	margin-top: 11px;
 }
 
 .logo__footer {
@@ -312,14 +448,26 @@ footer {
 	width: 100%;
 }
 
+.logo__start--black {
+	color: #454545;
+}
+
 .logo__ending--gray {
 	color: #b9b9b9;
 }
 
-.copy__footer {
+p.copy__footer {
 	display: block;
+	width: 201px;
+	height: 15px;
+	text-shadow: 1px 2px 0 white;
 	color: #c5c5c5;
-	width: 100%;
+	font-family: Georgia, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 24px;
+	margin-top: 52px;
+	margin-bottom: 15px;
 }
 
 .img-footer {
@@ -334,12 +482,17 @@ footer {
 	float: left;
 	margin: 0;
 	padding: 0;
+	margin-top: 38px;
 }
 
 .menu__footer>ul>li {
 	float: left;
-	padding-right: 20px;
+	margin-right: 43px;
 	font-family: 'LeagueGothic', sans-serif;
+}
+
+.menu>ul>li>a {
+	font-size: 20px;
 }
 
 .designed {
@@ -352,6 +505,8 @@ footer {
 	font-size: 12px;
 	line-height: 34px;
 	font-weight: 300;
+	margin-top: 41px;
+	margin-right: 23px;
 }
 
 .designed span {
