@@ -89,7 +89,8 @@ header {
 }
 
 .menu {
-
+ float: left;
+	margin-left: 140px;
 }
 
 .menu__header > ul > li {
@@ -158,7 +159,6 @@ header {
 
 div.readbtn {
 	height: 22px;
-	width: 256px;
 
 }
 
@@ -217,7 +217,7 @@ div.readbtn {
 
 .column__readbtn {
 	float: left;
-
+	width: 26%;
 }
 
 .bar__column {
@@ -225,7 +225,7 @@ div.readbtn {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	width: 255px;
+	width: 26%;
 }
 
 .icon {
@@ -346,7 +346,7 @@ div.readbtn {
 .start {
 	background: url("../img/dialogue_cloud.png");
 	float: left;
-	width: 427px;
+	width: 87%;
 	height: 292px;
 	margin-left: 23px;
 }
@@ -491,7 +491,7 @@ p.copy__footer {
 	font-family: 'LeagueGothic', sans-serif;
 }
 
-.menu>ul>li>a {
+.menu__footer>ul>li>a {
 	font-size: 20px;
 }
 
@@ -511,4 +511,94 @@ p.copy__footer {
 
 .designed span {
 	font-weight: 700;
+}
+
+@media (max-width: 960px) {
+
+	.centered {
+		width: 795px;
+	}
+
+	.logo__header {
+		margin-bottom: 11px;
+		margin-top: 77px;
+	}
+
+	.menu {
+		float: left;
+		margin: 0 0 68px 0;
+	}
+
+	.menu__header > ul > li {
+		float: right;
+		font-family: "LeagueGothic", sans-serif;
+		margin-left: 0;
+		margin-right: 52px;
+		margin-top: 17px;
+	}
+
+	.bar__column h3 {
+		text-shadow: 1px 2px 0 #0f1518;
+		color: white;
+		font-family: LeagueGothic, sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	.secondcol {
+		margin-left: 15px;
+	}
+
+	.thirdcol {
+		margin-left: 25px;
+	}
+
+	.right_align {
+		padding-left: 135px;
+	}
+
+	.second__btn {
+		width: 26%;
+		padding-left: 45px;
+	}
+
+  .third__btn {
+	  width: 26%;
+	  padding-left: 55px;
+  }
+
+  .start__content {
+	  height: 237px;
+	  overflow: hidden;
+  }
+
+	div.update__readbtn {
+		width: 81%;
+	}
+
+	.column__footer {
+		width: 28%;
+	}
+
+  .column__footer h3 {
+	  font-size: 24px;
+	  font-weight: 400;
+	  line-height: 24px;
+  }
+
+	.menu__footer > ul > li {
+		margin-right: 44px;
+		margin-top: 38px;
+	}
+}
+
+@media (max-height: 480px) {
+
+	.centered {
+		width: 410px;
+	}
+
+
+
 }
